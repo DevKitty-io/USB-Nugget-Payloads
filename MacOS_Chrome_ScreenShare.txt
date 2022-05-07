@@ -7,7 +7,7 @@ DELAY 100
 STRING terminal
 ENTER
 DELAY 2000
-STRING open https://meet.jit.si/tryingbutterscotch -a Google\ Chrome.app
+STRING open https://meet.jit.si/EXAMPLE -a Google\ Chrome.app
 DELAY 1000
 ENTER
 DELAY 4000
