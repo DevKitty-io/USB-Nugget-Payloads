@@ -3,3 +3,8 @@ Welcome to the official RubberNugget payload repository!  [The RubberNugget](htt
 
 ### Payloads
 - **PwnKit_Cred_Changer**: Uses the PwnKit exploit to change root creds on a Linux machine, disables user input, and delivers a devastating rickroll.
+
+- **ScreenShare MacOS Chrome**: Script to share a victim's screen via Chrome on MacOS
+
+- **ScreenShare MacOS Firefox**: Script to share a victim's screen via Firefox on MacOS
+
