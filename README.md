@@ -8,3 +8,5 @@ Welcome to the official RubberNugget payload repository!  [The RubberNugget](htt
 
 - **ScreenShare MacOS Firefox**: Script to share a victim's screen via Firefox on MacOS
 
+
+- **ScreenShare MacOS Safari**: Script to share a victim's screen via Safari on MacOS
