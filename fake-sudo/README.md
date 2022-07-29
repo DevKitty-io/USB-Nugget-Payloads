@@ -16,31 +16,4 @@
 4) The spoofing program deletes the "sudo" alias. Then it deletes itself.
 
 ## Configuration
-
-From "payload.txt" change the values of the following constant :
-```bash
-
-######## INITIALIZATION ########
-
-readonly BB_LABEL="BashBunny"
-
-```
-
-From "sudo-phishing.sh" change the values of the following constants if necessary :
-```bash
-
-readonly MAXIMUM_ATTEMPTS=3
-readonly ERROR_MESSAGE="sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
-
-```
-
-From "sudo-phishing.sh", change the payload if you wish :
-```bash
-##
-# <YOUR-PAYLOAD>
-##
-/bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
-##
-# </YOUR-PAYLOAD>
-##
-```
+Coming soon!
